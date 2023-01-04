@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <div id="numeroAnterior">0</div>
+        <div id="resultado">0</div>
+        
+        <div class="botoes">
+           <button id="limpar" onclick="limpar()">AC</button>
+           <button id="inverterSinal" onclick="inverterSinal()">+/-</button>
+           <button id="porcentagem" onclick="setOperadorPorcentagem()">%</button>
+           <button id="divisao" onclick="setOperadorDividir()">÷</button>
+
+           <button id="sete" onclick="setSete()">7</button>
+           <button id="oito" onclick="setOito()">8</button>
+           <button id="nove" onclick="setNove()">9</button>
+           <button id="multiplicacao" onclick="setOperadorMultiplicar()">x</button>
+
+           <button id="quatro" onclick="setQuatro()">4</button>
+           <button id="cinco" onclick="setCinco()">5</button>
+           <button id="seis" onclick="setSeis()">6</button>
+           <button id="subtracao" onclick="setOperadorSubtrair()">-</button>
+
+           <button id="um" onclick="setUm()">1</button>
+           <button id="dois" onclick="setDois()">2</button>
+           <button id="tres" onclick="setTres()">3</button>
+           <button id="soma" onclick="setOperadorSomar()">+</button>
+
+           <button id="zero" onclick="setZero()">0</button>
+           <button id="virgula" onclick="setVirgula()">,</button>
+           <button id="igual" onclick="resultado()">=</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
