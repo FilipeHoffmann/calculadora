@@ -1,4 +1,5 @@
 body {
+    color: white;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -12,7 +13,6 @@ body {
 }
 
 h1 {
-    color: white;
     text-align: center;
 }
 
@@ -20,14 +20,12 @@ h1 {
     text-align: right;
     margin-right: 11%;
     margin-bottom: 3%;
-    color: white;
 }
 
 #resultado {
     text-align: right;
     margin-right: 11%;
     margin-bottom: 3%;
-    color: white;
 }
 
 button {
