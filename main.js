@@ -1,6 +1,6 @@
 let numeroAnterior = 0;
 let numeroAtual = 0;
-let operador = '';
+let operador = '|';
 
 function main(){
     exibeResultado();
@@ -9,7 +9,7 @@ function main(){
 //Operadores
 
 function limpar(){
-    return numeroAtual = 0 , numeroAnterior = 0, exibeResultado();
+    return numeroAtual = 0 , numeroAnterior = 0 , operador = '|', exibeResultado();
 }
 
 function inverterSinal(){
@@ -95,49 +95,64 @@ function setNumeroAnterior(){
 function setOperadorPorcentagem(){
     setNumeroAnterior();
     setOperador('%');
+    exibeResultado();
 }
 
 function setOperadorDividir(){
     setNumeroAnterior();
     setOperador('/');
+    exibeResultado();
 }
 
 function setOperadorMultiplicar(){
     setNumeroAnterior();
     setOperador('*');
+    exibeResultado();
 }
 
 function setOperadorSubtrair(){
     setNumeroAnterior();
     setOperador('-');
+    exibeResultado();
 }
 
 function setOperadorSomar(){
     setNumeroAnterior();
     setOperador('+');
+    exibeResultado();
 }
 
 function resultado(){
     if (operador == '%'){
         porcentagem();
         removeNumeroAnterior();
+        resetOperador()
     } else if(operador == '/'){
         dividir();
         removeNumeroAnterior();
+        resetOperador()
     } else if(operador == '*'){
         multiplicar();
         removeNumeroAnterior();
+        resetOperador()
     } else if(operador == '-'){
         subtrair();
         removeNumeroAnterior();
+        resetOperador()
     } else if(operador == '+'){
         somar();
         removeNumeroAnterior();
+        resetOperador()
     }
 }
 
 function removeNumeroAnterior(){
     numeroAnterior = 0;
+    exibeResultado();
+}
+
+function resetOperador(){
+    operador = '|';
     exibeResultado();
 }
 
@@ -149,7 +164,7 @@ function removeZero(){
 
 function exibeResultado(){
     document.querySelector("#resultado").innerHTML = numeroAtual;
-    document.querySelector("#numeroAnterior").innerHTML = numeroAnterior;
+    document.querySelector("#numeroAnterior").innerHTML = numeroAnterior + " " + operador + " " + numeroAtual;
 }
 
 main();
