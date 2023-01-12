@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <div id="previousNumber">0</div>
+        <div id="result">0</div>
+        
+        <div class="botoes">
+           <button id="clean" onclick="clean()">AC</button>
+           <button id="reveseNumber" onclick="reverseNumber()">+/-</button>
+           <button id="percent" onclick="setOperatorPercent()">%</button>
+           <button id="divided" onclick="setOperatorDivided()">÷</button>
+
+           <button id="sete" onclick="setSeven()">7</button>
+           <button id="oito" onclick="setEigth()">8</button>
+           <button id="nove" onclick="setNine()">9</button>
+           <button id="multiply" onclick="setOperatorMultiply()">x</button>
+
+           <button id="quatro" onclick="setFour()">4</button>
+           <button id="cinco" onclick="setFive()">5</button>
+           <button id="seis" onclick="setSix()">6</button>
+           <button id="minus" onclick="setOperatorMinus()">-</button>
+
+           <button id="um" onclick="setOne()">1</button>
+           <button id="dois" onclick="setTwo()">2</button>
+           <button id="tres" onclick="setThree()">3</button>
+           <button id="plus" onclick="setOperatorPlus()">+</button>
+
+           <button id="zero" onclick="setZero()">0</button>
+           <button id="comma" onclick="setComma()">,</button>
+           <button id="equal" onclick="equal()">=</button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container {
+    padding: 5px;
+    width: 200px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#previousNumber {
+    text-align: right;
+    margin-right: 11%;
+    margin-bottom: 3%;
+}
+
+#result {
+    text-align: right;
+    margin-right: 11%;
+    margin-bottom: 3%;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+#zero {
+    width: 45%;
+}
