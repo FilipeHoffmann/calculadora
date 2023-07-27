@@ -13,7 +13,7 @@ function clean(){
     displayResult();
 }
 
-function reverseNumber(){
+function negative(){
     return currentNumber = currentNumber * -1,
     displayResult();
 }
@@ -177,7 +177,7 @@ function resetOperator(){
 
 function removeZero(){
     for(let i = 0; i < 2; i++){
-        reverseNumber();
+        negative();
     }
 }
 
